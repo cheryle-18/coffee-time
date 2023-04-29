@@ -6,6 +6,13 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      appBar: AppBar(
+          title: Text('Coffee Time')
+      ),
+      body: Center(
+        child: Text('Home Screen'),
+      ),
+    );
   }
 }
