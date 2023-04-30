@@ -1,9 +1,10 @@
-import 'package:coffee_time/home_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
+import 'package:coffee_time/detail_screen.dart';
+import 'package:coffee_time/home_screen.dart';
+
+import 'models/Menu.dart';
 
 void main() {
-  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   runApp(const MyApp());
 }
 
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
+        DetailScreen.routeName: (context) => DetailScreen(
+          menu: ModalRoute.of(context)?.settings.arguments as Menu
+        ),
       },
       // home: new Splash(),
     );
