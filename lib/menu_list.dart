@@ -1,6 +1,6 @@
 import 'package:coffee_time/menu_card.dart';
 import 'package:flutter/material.dart';
-import 'models/Menu.dart';
+import 'models/menu.dart';
 
 class MenuList extends StatelessWidget {
   const MenuList({Key? key}) : super(key: key);

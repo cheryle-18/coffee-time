@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:coffee_time/detail_screen.dart';
 import 'package:coffee_time/home_screen.dart';
 
-import 'models/Menu.dart';
+import 'models/menu.dart';
 
 void main() {
   runApp(const MyApp());

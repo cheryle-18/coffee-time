@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:coffee_time/detail_screen.dart';
-import 'models/Menu.dart';
+import 'models/menu.dart';
 
 class MenuCard extends StatelessWidget {
   final Menu menu;
@@ -26,7 +26,7 @@ class MenuCard extends StatelessWidget {
               SizedBox(
                 width: 100,
                 child: Center(
-                  child: Image.network(menu.imageUrl)
+                  child: Image.asset(menu.imageUrl)
                 ),
               ),
               Expanded(
